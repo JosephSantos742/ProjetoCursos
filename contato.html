@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contatoStyle.css">
+    <link rel="shortcut icon" href="img/tools.png" type="png/icon">
+    <title>Viva La Arte</title>
+</head>
+<body>
+    <div class="menu-br">
+        <!-- <h1 class="logo">Viva La Vida</h1> -->
+        <h1 class="logo">Viva La Arte</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Cursos</a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="curso_Manga.html">Mangá</a></li>
+                        <li><a href="curso_Cartoon.html">Cartoon</a></li>
+                        <li><a href="curso_HQ.html">HQ</a></li>
+                        <li><a href="curso_Realismo.html">Realismo</a></li>
+                        <li><a href="curso_THE.html">T.H.E.</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+    <div class="unidades">
+        <p><span>Campinas</span>
+            <br>Av. Júlio de Mesquita, 249 - Cambuí
+            <br>Telefone: (19) 3333-1212
+        </p>
+        <p><span>Valinhos</span>
+            <br>R. José de Oliveira Campos, 132 - Vila Franceschini
+            <br>Telefone: (19) 3333-1213
+        </p>
+        <p><span>Hortolândia</span>
+            <br>R. Valentim Andreta, 113 - Jardim Santana
+            <br>Telefone: (19) 3333-1214
+        </p>
+    </div>
+
+    <form class="container" action="https://api.staticforms.xyz/submit" method="post">
+        <input type="hidden" name="accessKey" value="45f43ddd-214e-4997-9c6c-e2b1fa4f8e2b">
+        <div>
+            <div class="inputgroup">               
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nome" placeholder="Insira seu nome" name="$nome" required>
+            </div>
+
+            <div class="inputgroup">
+                <label for="email">E-mail</label><br>
+                <input type="text" id="email" placeholder="Insira seu melhor e-mail" name="$email" required>
+            </div>
+
+            <div class="inputgroup">
+                <label for="telefone">Telefone</label><br>
+                <input type="text" id="telefone" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" name="$telefone" required>
+            </div>
+
+            <div class="inputgroup">
+                <label for="assunto">Assunto</label><br>
+                <select name="$assunto" id="assunto">
+                    <option value="aulas">Aulas de desenho</option>
+                    <option value="duvidas">Duvidas e sugestões</option>
+                    <option value="vagas">Trabalhe conosco</option>
+                  </select>
+            </div>
+
+            <div class="inputgroup">
+                <label for="unidade">Unidade</label><br>
+                <select name="$unidade" id="unidade">
+                    <option value="matriz">Campinas</option>
+                    <option value="filial1">Valinhos</option>
+                    <option value="filial2">Hortolândia</option>
+                  </select>
+            </div>
+
+            <div class="inputgroup">
+                <label for="comentrio">Comentário</label><br>
+                <textarea name="$comentario" id="textarea" cols="90" rows="10" placeholder="Digite aqui seu comentário."></textarea>
+            </div>
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/projetoCursos-1.2%20-%20OPEN_BETA/index.html">
+            <div class="inputgroup">
+                <button id="btnEnviar" type="submit">Enviar</button>
+            </div>
+       </div>       
+    </form>
+</body>
+<script src="js/scriptContato.js"></script>
+</html>

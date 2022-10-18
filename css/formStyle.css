@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgb(255, 255, 255) 70%, rgba(155,227,242,1) 100%);
+}
+
+.container {
+    margin: 3%; 
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    border: 3px solid #61a1ad;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%; 
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 91%, #91d0db 100%);
+}
+
+.container label {
+    text-align: center;
+}
+
+.inputgroup {
+    margin-top: 2%; 
+    text-align: center;     
+}
+
+.inputgroup input {
+    font-size:20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(60, 87, 238, 0.4) 4px 4px, rgba(82, 186, 228, 0.3) 10px 10px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.dados_pessoais {
+    margin: 0 10%;
+}
+
+#telefone {
+    width: 25%;
+}
+
+.localizacao {
+    margin: 3% 0;
+}
+
+.localizacao .linha {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin: 0 10%;
+    font-family: 'Dosis', sans-serif;
+}
+
+.radiogroup {
+    text-align: center;
+    font-size: 20px;
+    padding: 2%;
+    color: #000;
+}
+
+.radiogroup input {
+    margin: 0 3%;
+    width: 20px;
+    height: 20px;
+}
+
+.inputgroup button {
+    font-size: 20px;
+    padding: 1% 2.5%;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 2%;
+    box-shadow: rgba(60, 87, 238, 0.4) 4px 4px, rgba(82, 186, 228, 0.3) 10px 10px;
+}
+
+.inputgroup button:hover {
+    background-color: #61a1ad;
+    color: #fff;
+}
+
+
+
+

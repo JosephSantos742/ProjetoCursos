@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formStyle.css">
+    <link rel="shortcut icon" href="img/tools.png" type="png/icon">
+    <title>Viva La Arte</title>
+</head>
+<body>
+    <div class="menu-br">
+        <!-- <h1 class="logo">Viva La Vida</h1> -->
+        <h1 class="logo">Viva La Arte</h1>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Cursos</a>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="curso_Manga.html">Mangá</a></li>
+                        <li><a href="curso_Cartoon.html">Cartoon</a></li>
+                        <li><a href="curso_HQ.html">HQ</a></li>
+                        <li><a href="curso_Realismo.html">Realismo</a></li>
+                        <li><a href="curso_THE.html">T.H.E.</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <form class="container" action="https://api.staticforms.xyz/submit" method="post">
+
+        <input type="hidden" name="accessKey" value="45f43ddd-214e-4997-9c6c-e2b1fa4f8e2b">
+
+            <div class="dados_pessoais">
+                <div class="inputgroup">               
+                    <label for="nome">Nome</label><br>
+                    <input type="text" id="nome" placeholder="Insira seu nome" name="$nome" required>
+                </div>
+
+                <div class="inputgroup">
+                    <label for="email">E-mail</label><br>
+                    <input type="text" id="email" placeholder="Insira seu melhor e-mail" name="$email" required>
+                </div>
+
+                <div class="inputgroup">
+                    <label for="telefone">Telefone / celular</label><br>
+                    <input type="text" id="telefone" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" name="$telefone" required>
+                </div>
+            </div>
+
+            <div class="localizacao">
+                <div class="linha">
+                    <div class="inputgroup">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="$cep" placeholder="Procure seu endereço pelo CEP" required>
+                    </div>
+                    <div class="inputgroup">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" name="$endereco" required>
+                    </div>
+                    <div class="inputgroup">
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero" name="$numero" required>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="inputgroup">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" name="$bairro" required>
+                    </div>
+                    <div class="inputgroup">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="$cidade" required>
+                    </div>
+                    <div class="inputgroup">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="$estado" required>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="cursos">
+                <div class="radiogroup">
+                    <label for="curso" id="curso">Escolha o curso desejado</label><br><br>
+                    <input type="radio" id="manga" name="$curso" value="manga" required>
+                    <label for="curso">Mangá</label>
+                    <input type="radio" id="cartoon" name="$curso" value="cartoon" required>
+                    <label for="curso">Cartoon</label>
+                    <input type="radio" id="hq" name="$curso" value="hq" required>
+                    <label for="curso">HQ</label>
+                    <input type="radio" id="realismo" name="$curso" value="realismo" required>
+                    <label for="curso">Realismo</label>
+                    <input type="radio" id="the" name="$curso" value="the" required>
+                    <label for="curso">T.H.E.</label>
+                </div>
+            </div>
+
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/projetoCursos-1.2%20-%20OPEN_BETA/index.html">
+            <div class="inputgroup">
+                <button id="btnEnviar" type="submit">Enviar</button>
+            </div>           
+    </form>
+
+</body>
+
+<script src="js/scriptForm.js"></script>
+</html>

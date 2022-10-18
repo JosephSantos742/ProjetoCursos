@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgb(255, 255, 255) 70%, rgba(155,227,242,1) 100%);
+}
+
+.unidades {
+    display: flex;
+    font-size: 20px; 
+    justify-content: center;
+    align-items: center;  
+}
+
+.unidades p {
+    margin-top: 5%;
+    padding: 0 1%;
+    text-align: center;
+}
+
+.unidades span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container {
+    margin: 3%; 
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+    border: 3px solid #61a1ad;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%; 
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 91%, #91d0db 100%);
+}
+
+.container label {
+    text-align: center;
+}
+
+.inputgroup {
+    margin-top: 2%; 
+    text-align: center;     
+}
+
+.inputgroup input {
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(60, 87, 238, 0.4) 4px 4px, rgba(82, 186, 228, 0.3) 10px 10px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.inputgroup button {
+    font-size: 22px;
+    padding: 2%;
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 2%;
+    box-shadow: rgba(60, 87, 238, 0.4) 4px 4px, rgba(82, 186, 228, 0.3) 10px 10px;
+}
+
+.inputgroup button:hover {
+    background-color: #61a1ad;
+    color: #fff;
+}
+
+.inputgroup select {
+    font-size: 18px;
+    margin-top: 10px;
+    box-shadow: rgba(60, 87, 238, 0.4) 4px 3px, rgba(82, 186, 228, 0.3) 10px 10px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    padding: 0.5% 1%;
+}
+
+#telefone {
+    width: 25%;
+}
+
+#textarea {
+    margin-top: 10px;
+    font-size: 22px;
+    resize: none;
+    box-shadow: rgba(60, 87, 238, 0.4) 4px 3px, rgba(82, 186, 228, 0.3) 10px 10px;
+    font-family: 'Dosis', sans-serif;
+}
+
+

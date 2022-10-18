@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.corpo_ {
+    margin: 0 5%;
+    height: 855px;
+}
+
+.corpo_ img {
+    position: absolute;
+    left: 15%;
+    bottom: 18%;
+    width: 32%;
+    border-radius: 2%;
+}
+
+.corpo_ .texto h1 {
+    font-size: 55px;
+    margin-bottom: 5%;
+    color: #9be3f2;
+}
+
+.corpo_ .texto div {
+    width: 65%;
+    margin-bottom: 3%;
+}
+
+.corpo_ .texto div p {
+    font-size: 230%;
+}
+
+.corpo_ .texto span {
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+.corpo_ .texto {
+    position: absolute;
+    left: 58%;
+    bottom: 24%;
+}
+
+.corpo_ .texto button {
+    width: 55%;
+    padding: 1%;
+    font-size: large;
+    background-color: #9be3f2;
+    color: #fff;
+    border-color: #fff;
+    margin-top: 5%;
+    border-radius: 10%;
+}
